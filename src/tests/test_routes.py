@@ -33,10 +33,10 @@ def test_get_reservation():
 
 
 def test_delete_reservation():
-    response = client.delete("/reservation/?id=1")
+    response = client.delete("/reservation/1")
     assert response.status_code == 200
 
 def test_delete_table():
-    response = client.delete("/table/?id=1")
+    response = client.delete("/table/1")
     assert response.status_code == 200
 
