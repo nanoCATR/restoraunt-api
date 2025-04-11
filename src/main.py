@@ -13,8 +13,8 @@ app = FastAPI()
 app.add_middleware(BaseHTTPMiddleware, dispatch=log_middleware)
 
 
-app.include_router(table_router.router, prefix="/table", tags=["Table"])
-app.include_router(reservations_router.router, prefix="/reservation", tags=["Reservation"])
+app.include_router(table_router.router, prefix="/tables", tags=["Tables"])
+app.include_router(reservations_router.router, prefix="/reservations", tags=["Reservations"])
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=80, reload=True)

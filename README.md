@@ -16,18 +16,18 @@ docker-compose up -d
 
 # Endpoints
 
-## Table
+## Tables
 Endpoint |HTTP Method | CRUD Method | Result
 -- | -- |-- |--
-`table` | GET | READ | Список всех столиков
-`table`| POST | CREATE | Создать новый столик
-`table/{id}` | DELETE | DELETE | Удалить столик
+`tables` | GET | READ | Список всех столиков
+`tables`| POST | CREATE | Создать новый столик
+`tables/{id}` | DELETE | DELETE | Удалить столик
 
-### Reservation
+### Reservations
 Endpoint |HTTP Method | CRUD Method | Result
 -- | -- |-- |--
-`reservation` | GET | READ | Список всех броней
-`reservation`| POST | CREATE | Создать новую бронь
-`reservation/{id}` | DELETE | DELETE | Удалить бронь
+`reservations` | GET | READ | Список всех броней
+`reservations`| POST | CREATE | Создать новую бронь
+`reservations/{id}` | DELETE | DELETE | Удалить бронь
 
 
